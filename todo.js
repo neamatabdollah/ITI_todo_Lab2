@@ -107,7 +107,7 @@ function editBtnFun(id){
     }
   }
 }
-//delete function/////////////////////////////////////////////
+//delete function
 function deleteBtn(id){
   for(let i=0; i<todos.length; i++){
     if(todos[i].id === id){
@@ -181,7 +181,7 @@ function searchTodos() {
 
   for (let i = 0; i < todos.length; i++) {
     const titleLower = todos[i].title.toLowerCase();
-    const descLower = todos[i].desc.toLowerCase();
+    //const descLower = todos[i].desc.toLowerCase();
 
     if (titleLower.includes(searchTerm)) {
       matchedTodos.push(todos[i]);
