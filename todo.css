@@ -2,16 +2,33 @@ body {
   font-family: sans-serif; 
   padding: 20px; 
 }
+#doDoListContainer {
+  width: 80%;
+  margin: auto;
+}
 .todo { 
   border: 1px solid #ccc; 
+  width: 90%;
   padding: 10px; 
   margin-top: 10px; 
 }
 .done { 
   background-color: #b7f7b7; 
 }
+#title, #desc, #search {
+  width: 90%;
+}
+input {
+  padding: 5px;
+}
 button { 
   margin: 5px; 
+  padding: 8px 15px;
+  background-color: #095c3f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 #errorMessage {
   color: red;
