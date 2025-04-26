@@ -6,18 +6,23 @@
   <link rel="stylesheet" href="todo.css">
 </head>
 <body>
-
-  <h2>Todo List</h2>
-  <input id="title" placeholder="Todo Title"><br><br>
-  <input id="desc" placeholder="Todo Description"></input><br><br>
-  <button id="actionBtn" onclick="addOrUpdate()">Add</button>
-  <div id="errorMessage"></div>
-
-  <br>
-  <input type="text" id="search" placeholder="Search..." oninput="searchTodos()">
-  <ul id="searchResults"></ul>
+  <div id="doDoListContainer">
+    <h2>Todo List</h2>
+    <label for="title">Title<span style="color: red;">*</span>:</label><br>
+    <input id="title" placeholder="Todo Title"><br><br>
+    <label for="desc">Description<span style="color: red;">*</span>:</label><br>
+    <input id="desc" placeholder="Todo Description"></input><br><br>
+    <button id="actionBtn" onclick="addOrUpdate()">Add</button>
+    <div id="errorMessage"></div>
   
-  <div id="todo-container"></div>
+    <br><br>
+    <input type="text" id="search" placeholder="Search..." oninput="searchTodos()">
+    <ul id="searchResults"></ul>
+    
+    <div id="todo-container"></div>
+  </div>
+
+
 
   <script src="todo.js"></script>
 </body>
