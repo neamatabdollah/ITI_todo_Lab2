@@ -1,0 +1,45 @@
+body {
+  font-family: sans-serif; 
+  padding: 20px; 
+}
+.todo { 
+  border: 1px solid #ccc; 
+  padding: 10px; 
+  margin-top: 10px; 
+}
+.done { 
+  background-color: #b7f7b7; 
+}
+button { 
+  margin: 5px; 
+}
+#errorMessage {
+  color: red;
+  background-color: #ffe6e6;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  display: none;
+}
+
+#searchResults {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+#searchResults li{
+  background-color: #f0f0f0;
+  width:30%;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#searchResults li:hover {
+  background-color: #d0eaff;
+}

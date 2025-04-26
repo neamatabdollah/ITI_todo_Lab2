@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+
+  <h2>Todo List</h2>
+  <input id="title" placeholder="Todo Title"><br><br>
+  <input id="desc" placeholder="Todo Description"></input><br><br>
+  <button id="actionBtn" onclick="addOrUpdate()">Add</button>
+  <div id="errorMessage"></div>
+
+  <br>
+  <input type="text" id="search" placeholder="Search..." oninput="searchTodos()">
+  <ul id="searchResults"></ul>
+  
+  <div id="todo-container"></div>
+
+  <script src="todo.js"></script>
+</body>
+</html>
